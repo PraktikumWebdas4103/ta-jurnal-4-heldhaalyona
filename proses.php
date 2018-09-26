@@ -88,6 +88,7 @@ if (isset($_POST["simpan"])) {
 	$genre 		= $_POST['film'];
 	$wisata 	= $_POST['kota'];
 
+	echo "<img src='gambar/$img'>";
 	echo "<br>";
 	$hobi_str = null;
 	$genre_str = null;
@@ -118,12 +119,10 @@ if (isset($_POST["simpan"])) {
 
 ?>
 <table border="2" cellpadding="1" cellspacing="2">
-	<th>GAMBAR</th>
 	<th>HOBI</th>
 	<th>GENRE FILM</th>
 	<th>TUJUAN WISATA</th>
 	<tr>
-		<td><img src='gambar/'<?php $img; ?>></td>
 		<td><?php echo $hobi_str; ?></td>
 		<td><?php echo $genre_str; ?></td>
 		<td><?php echo $wisata_str; ?></td>
